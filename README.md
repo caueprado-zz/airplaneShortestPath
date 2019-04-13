@@ -46,17 +46,12 @@ $ spring-boot:run -Dspring-boot.run.arguments=input-routes.csv
 
 - Interface Rest
 
-## Recomendações ##
-Para uma melhor fluides da nossa conversa, atente-se aos seguintes pontos:
+Exemplo request:
 
-* Envie apenas o código fonte,
-* Estruture sua aplicação seguindo as boas práticas de desenvolvimento,
-* Evite o uso de frameworks ou bibliotecas externas à linguagem. Utilize apenas o que for necessário para a exposição do serviço,
-* Implemente testes unitários seguindo as boas praticas de mercado,
-* Documentação
-  Em um arquivo Texto ou Markdown descreva:
-  * Como executar a aplicação,
-  * Estrutura dos arquivos/pacotes,
-  * Explique as decisões de design adotadas para a solução,
-  * Descreva sua APÌ Rest de forma simplificada.
+http://localhost:8080/api/route/GRU/CDG
 
+response
+
+```json
+{"routes":["GRU","BRC","SCL","ORL","CDG"],"cost":40}
+```
