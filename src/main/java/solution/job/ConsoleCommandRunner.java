@@ -34,8 +34,7 @@ public class ConsoleCommandRunner implements CommandLineRunner {
                 if (str.length < 2) {
                     System.out.println("Please enter in format SOURCE-DESTINY ");
                 } else {
-                    Routes.getRoute().getAirports().forEach(airport ->
-                            System.out.println("Airport > " + airport.getLabel() ));
+                    routeService.shortestPath(str[0],str[1]);
                 }
 
                 sc.nextLine();
